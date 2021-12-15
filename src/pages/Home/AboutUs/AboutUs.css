@@ -1,0 +1,20 @@
+.aboutUs{
+    color: rgb(245, 121, 4);
+    text-align: left;
+}
+.about{
+    text-align: left;
+}
+.about-column{
+    background-color: rgb(226, 184, 217);
+}
+
+.paragraph{
+    text-align: left;
+}
+.about-button{
+    padding: 5px 15px;
+    background-color: rgb(245, 121, 4);
+    border: none;
+    border-radius: 5px;
+}

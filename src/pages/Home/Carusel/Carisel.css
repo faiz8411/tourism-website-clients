@@ -1,0 +1,29 @@
+/* .row{
+    background-image: url('https://i.ibb.co/7QCCzJv/carusel1.jpg');
+} */
+.small{
+    margin-top: -80px;
+    /* position: relative; */
+}
+
+.carousel-container{
+    position: relative;
+    background-image: url('https://i.ibb.co/7QCCzJv/carusel1.jpg');
+    background-size: cover;
+    height: 100eh;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.container{
+    /* position: relative; */
+    /* top: 40%; */
+    /* left: 50%; */
+}
+.button ::after{
+    background-color: brown;
+}
+
+.text{
+    color: crimson;
+}
