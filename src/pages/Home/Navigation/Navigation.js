@@ -15,7 +15,7 @@ const Navigation = () => {
                     </Navbar.Brand>
 
                     <Nav className="mx-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
                         <Dropdown className="me-auto">
                             <Dropdown.Toggle variant="" id="dropdown-basic" className='mx-auto'>
                                 service

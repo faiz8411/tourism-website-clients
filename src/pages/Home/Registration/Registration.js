@@ -1,34 +1,24 @@
 import React, { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { useForm } from 'react-hook-form';
 
-const Login = () => {
+const Registration = () => {
     const [loginData, SetLoginData] = useState({})
-    // // const { user, loginUser, isLoading, signWithGoogle } = useAuth()
-    // const location = useLocation()
-    // const navigate = useNavigate()
-    const handleOnChange = (e) => {
-        const Field = e.target.name
+    const handleOnBlur = (e) => {
+        const Field = e.target.name;
         const value = e.target.value
         const newLoginData = { ...loginData }
         newLoginData[Field] = value
-        console.log(Field, value)
         SetLoginData(newLoginData)
-    }
-
-    // const handleOnChange = (e) => {
-    //     const Field = e.target.name;
-    //     const value = e.target.value
-    //     const newLoginData = { ...loginData }
-    //     newLoginData[Field] = value
-    //     SetLoginData(newLoginData)
-
-    //     e.preventDefault()
-    const handleLoginSubmit = (e) => {
-        // loginUser(loginData.email, loginData.password, location, navigate)
+        console.log(newLoginData)
         e.preventDefault()
     }
-
+    const handleLoginSubmit = (e) => {
+        // loginUser(loginData.email, loginData.password, location, navigate)
+        if (loginData.password !== loginData.password2) {
+            alert('password did not macth')
+        }
+        e.preventDefault()
+    }
     return (
         <div>
             <Row>
@@ -37,8 +27,8 @@ const Login = () => {
                         {/* register your input into the hook by invoking the "register" function */}
                         <input
                             style={{ width: '80%', margin: 20 }}
-                            defaultValue="email"
-                            onChange={handleOnChange}
+                            // defaultValue="email"
+                            onChange={handleOnBlur}
                             type="email"
                             name='email'
                             placeholder='email'
@@ -47,7 +37,16 @@ const Login = () => {
                             style={{ width: '80%', margin: 10, borderBottom: '' }}
                             // defaultValue="password"
                             placeholder='password'
-                            onChange={handleOnChange}
+                            onChange={handleOnBlur}
+                            name='password'
+                            type="password" />
+
+                        <br />
+                        <input
+                            style={{ width: '80%', margin: 10, borderBottom: '' }}
+                            // defaultValue="password"
+                            placeholder='password'
+                            onChange={handleOnBlur}
                             name='password'
                             type="password" />
 
@@ -57,7 +56,7 @@ const Login = () => {
 
                         {/* {errors.exampleRequired && <span>This field is required</span>} */}
 
-                        <input type="submit" value="login" onClick={handleLoginSubmit} className='bg-success rounded text-white border-0 p-4' />
+                        <input type="submit" value="register" onClick={handleLoginSubmit} className='bg-success rounded text-white border-0 p-4' />
                     </form>
                 </Col>
                 <Col xs={12} md={6}>
@@ -65,9 +64,8 @@ const Login = () => {
                 </Col>
 
             </Row>
-
         </div>
     );
 };
 
-export default Login;
+export default Registration;
