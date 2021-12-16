@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import './Details.css'
 
 const Details = () => {
     const [details, setDetails] = useState({})
+    const { user } = useAuth()
     const { serviceId } = useParams()
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const onSubmit = data => {
+        alert('your order successfully added in my order')
+        data.status = "pending"
         console.log(data)
         fetch("http://localhost:5000/confirmOrder", {
             method: "POST",
@@ -51,14 +55,23 @@ const Details = () => {
 
                             />}
                             <br />
-                            <input
+                            {user?.email && <input
                                 style={{}}
                                 {...register("email")}
+                                defaultValue={user.email}
                                 placeholder="email"
                                 className="p-2 m-2 w-100 input-field"
-                            />
+                            />}
                             <br />
+                            {details.details && <input
+                                style={{}}
+                                {...register("details")}
+                                placeholder="description"
+                                defaultValue={details.details}
+                                className="p-2 m-2 w-100 input-field"
 
+                            />}
+                            <br />
                             <input
                                 style={{ m: 2 }}
                                 {...register("number",)}
