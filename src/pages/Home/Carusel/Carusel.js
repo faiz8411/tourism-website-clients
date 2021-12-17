@@ -9,8 +9,8 @@ const Carusel = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-lg-6">
-                        <h4>booke with us and book it <br />
-                            <span className='text'> out of here</span> </h4>
+                        <h4>EXPLORE WORLD WITH OUR TEAM <br />
+                            <span className='text'> OUT OF YOUR ZONE</span> </h4>
                         <button className='p-2 button shadow-4 m-2 bg-success rounded text-white'>explore</button>
                     </div>
                     <div className="col-md-6 col-lg-6">

@@ -10,14 +10,14 @@ const Navigation = () => {
     const { user, logout } = useAuth()
     return (
         <div className='navigation-container'>
-            <Navbar bg="dark" variant="warning">
+            <Navbar bg="" variant="warning" className=' nav'>
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="#home" className='text-white'>
                         Logo
                     </Navbar.Brand>
 
                     <Nav className="mx-auto">
-                        <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} className='text-white' to="/home">Home</Nav.Link>
                         {/* <Dropdown className="me-auto">
                             <Dropdown.Toggle variant="" id="dropdown-basic" className='mx-auto'>
                                 service
@@ -30,12 +30,12 @@ const Navigation = () => {
                                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown> */}
-                        <Nav.Link as={HashLink} to="/features">Features</Nav.Link>
-                        {user?.email && <Nav.Link as={HashLink} to="/order">Order</Nav.Link>}
-                        {user.email && <Nav.Link as={HashLink} to="/dashboard">Dashboard</Nav.Link>}
-                        {user?.email ? <Nav.Link as={HashLink} to="/login" className="bg-warning rounded" onClick={logout}>logout</Nav.Link>
+                        <Nav.Link as={HashLink} className='text-white' to="/features">Features</Nav.Link>
+                        {user?.email && <Nav.Link as={HashLink} className='text-white' to="/order">Order</Nav.Link>}
+                        {user.email && <Nav.Link as={HashLink} className='text-white' to="/dashboard">Dashboard</Nav.Link>}
+                        {user?.email ? <Nav.Link as={HashLink} className='text-white' to="/login" className=" text-white rounded" onClick={logout}>logout</Nav.Link>
                             :
-                            <Nav.Link as={HashLink} to="/login" className="bg-warning rounded">login</Nav.Link>}
+                            <Nav.Link as={HashLink} to="/login" className="rounded">login</Nav.Link>}
                         <Navbar.Collapse className="justify-content-end ">
                             <Navbar.Text className="text-white ">
                                 {user?.email &&

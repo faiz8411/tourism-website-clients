@@ -19,14 +19,7 @@ const Login = () => {
         e.preventDefault()
     }
 
-    // const handleOnChange = (e) => {
-    //     const Field = e.target.name;
-    //     const value = e.target.value
-    //     const newLoginData = { ...loginData }
-    //     newLoginData[Field] = value
-    //     SetLoginData(newLoginData)
 
-    //     e.preventDefault()
     const handleLoginSubmit = (e) => {
         loginUser(loginData.email, loginData.password, location, navigate)
         e.preventDefault()

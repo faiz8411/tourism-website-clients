@@ -27,8 +27,8 @@ const Service = () => {
                                 </div>
                                 <h6 className='description'>{pd.name}</h6>
 
-                                <p className=' description-project'>{pd.description}</p>
-                                <h4 className='price'>price:${pd.price}</h4>
+                                <p className=' description-project'><span className='text-primary'>location</span> <br /> {pd.description}</p>
+                                <h6 className='price'>price:${pd.price}</h6>
                                 <Link to={`/details/${pd._id}`}><button className='p-2 border-0 bg-primary rounded text-white price'>Booking Now</button></Link>
                             </div>
 

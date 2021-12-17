@@ -36,6 +36,7 @@ const Dashboard = () => {
                                         <Nav.Link as={HashLink} to={`/dashboard/manageOrder`}>My Order</Nav.Link>
                                         <Nav.Link as={HashLink} to={`/dashboard/payment`}>Pay</Nav.Link>
                                         <Nav.Link as={HashLink} to={`/dashboard/AllServiceManage`}>All service</Nav.Link>
+                                        <Nav.Link as={HashLink} to={`/dashboard/MakeAdmin`}>Make admin</Nav.Link>
 
                                         {user?.email ?
                                             <Nav.Link as={HashLink} onClick={logOut} to="/logout">Logout</Nav.Link>

@@ -21,6 +21,8 @@ import Dashboard from './pages/Home/Dashboared/Dashboared';
 import Peyment from './pages/Home/Petment/Peyment';
 import ManageOrder from './pages/Home/ManegeOrder/ManageOrder';
 import AllServiceManage from './pages/Home/Home/AllSericeManage/AllServiceManage';
+import MakeAdmin from './pages/Home/MakeAdmin/MakeAdmin';
+import Footer from './pages/Home/Home/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -46,6 +48,7 @@ function App() {
               <Route path="/dashboard/payment" element={<Peyment></Peyment>}></Route>
               <Route path="/dashboard/manageOrder" element={<ManageOrder></ManageOrder>}></Route>
               <Route path="/dashboard/AllServiceManage" element={<AllServiceManage />}></Route>
+              <Route path="/dashboard/MakeAdmin" element={<MakeAdmin />}></Route>
             </Route>
             <Route path="/details/:serviceId" element={<PrivateRoute>
               <Details></Details>
@@ -58,6 +61,7 @@ function App() {
 
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>

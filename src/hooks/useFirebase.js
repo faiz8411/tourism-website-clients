@@ -75,11 +75,7 @@ const useFirebase = () => {
         const unSubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user)
-                // getIdToken(user)
-                //     .then(idToken => {
-                //         setToken(idToken)
-                //         console.log(idToken)
-                //     })
+
             } else {
                 setUser({})
             }
@@ -115,12 +111,12 @@ const useFirebase = () => {
             },
             body: JSON.stringify(user)
         })
-        // .then(res => res.json())
+            .then()
     }
     return {
         user,
         admin,
-        token,
+
         isLoading,
         authError,
         registerUser,

@@ -70,7 +70,7 @@ const AllServiceManage = () => {
                             </div>
                             <div className="col-md-2">
                                 <h6>user email</h6>
-                                <p className=' description-project'>{user.email}</p>
+                                <p className=' description-project'>{pd.email}</p>
                             </div>
                             <div className="col-md-2">
                                 <h6>price</h6>
