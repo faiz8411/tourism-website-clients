@@ -4,6 +4,7 @@ import './Navigation.css'
 import Typewriter from 'typewriter-effect'
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
+import logo from '../../../images/logo.png'
 
 
 const Navigation = () => {
@@ -13,7 +14,7 @@ const Navigation = () => {
             <Navbar bg="" variant="warning" className=' nav'>
                 <Container>
                     <Navbar.Brand href="#home" className='text-white'>
-                        Logo
+                        <img src={logo} alt="" />
                     </Navbar.Brand>
 
                     <Nav className="mx-auto">
