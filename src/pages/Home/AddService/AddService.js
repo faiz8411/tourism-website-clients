@@ -22,11 +22,11 @@ const AddService = () => {
     return (
         <div>
             <div>
-                <h1 className="mt-5 text-center text-danger">Please Add Services</h1>
-                <div className=" w-25 m-auto mt-5">
+                <h1 className="mb-4 text-center text-danger">Please Add Services</h1>
+                <div className=" w-25 m-auto ">
                     <div className="AdService-container ">
                         <div className="addService">
-                            <form onSubmit={handleSubmit(onSubmit)} style={{ height: 300, m: 3 }}>
+                            <form onSubmit={handleSubmit(onSubmit)} style={{ height: 300, m: 0 }}>
                                 <input
                                     style={{ border: '2px solid green', }}
                                     {...register("name")}

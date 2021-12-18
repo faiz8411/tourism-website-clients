@@ -8,7 +8,7 @@ const Carusel = () => {
         <div className='carousel-container'>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 col-lg-6">
+                    <div className="col-md-6 col-lg-6 mt-5">
                         <h4>EXPLORE WORLD WITH OUR TEAM <br />
                             <span className='text'> OUT OF YOUR ZONE</span> </h4>
                         <button className='p-2 button shadow-4 m-2 bg-success rounded text-white'>explore</button>
@@ -24,8 +24,8 @@ const Carusel = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-2">japan</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3">cox,s bazar</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                                 <h5>italia</h5>
@@ -33,13 +33,13 @@ const Carusel = () => {
                             <div className='m-3'>
                                 <Dropdown className="me-auto">
                                     <Dropdown.Toggle variant="white" id="dropdown-basic" className='mx-auto'>
+
                                         date
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-1"> <input type="date" value="date" /></Dropdown.Item>
+
                                     </Dropdown.Menu>
                                 </Dropdown>
                                 <h6>thu 12</h6>
