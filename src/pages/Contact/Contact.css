@@ -1,0 +1,23 @@
+.contact{
+    width: 80%;
+    margin: 20px;
+    /* border-radius: 3px */
+
+}
+.contactText{
+    width: 80%;
+    height: 220px;
+}
+.button-send{
+    padding: 15px 25px;
+    background: rgb(221, 59, 159);
+    border: 0;
+    border-radius: 10px;
+    color: wheat;
+}
+.text-contact{
+    /* outline: tomato; */
+    margin-left: 200px;
+    text-align: left;
+    color: tomato;
+}

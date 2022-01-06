@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
 import AddService from './pages/Home/AddService/AddService';
 import Login from './pages/Home/Login/Login';
 import NotFound from './pages/NotFound/NotFound';
@@ -23,6 +24,7 @@ import ManageOrder from './pages/Home/ManegeOrder/ManageOrder';
 import AllServiceManage from './pages/Home/Home/AllSericeManage/AllServiceManage';
 import MakeAdmin from './pages/Home/MakeAdmin/MakeAdmin';
 import Footer from './pages/Home/Home/Footer/Footer';
+import MakeSuper from './pages/Home/Home/MakeSuper/MakeSuper';
 function App() {
   return (
     <div className="App">
@@ -49,6 +51,7 @@ function App() {
               <Route path="/dashboard/manageOrder" element={<ManageOrder></ManageOrder>}></Route>
               <Route path="/dashboard/AllServiceManage" element={<AllServiceManage />}></Route>
               <Route path="/dashboard/MakeAdmin" element={<MakeAdmin />}></Route>
+              <Route path="/dashboard/MakeSuper" element={<MakeSuper />}></Route>
             </Route>
             <Route path="/details/:serviceId" element={<PrivateRoute>
               <Details></Details>

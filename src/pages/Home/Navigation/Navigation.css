@@ -1,10 +1,22 @@
 .navigation-container{
     /* margin-top: 150px; */
+    position: sticky;
 }
 .displayName{
     margin-left: 100px;
 }
+/* .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+  } */
+
 .nav{
+    position: sticky;
     background-color: rgba(1, 74, 92, 0.87);
 }
 

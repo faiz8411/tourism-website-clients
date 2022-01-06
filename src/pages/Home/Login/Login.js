@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Alert, Col, Row, Spinner } from 'react-bootstrap';
+import { Alert, Button, Col, Row, Spinner } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
@@ -56,9 +57,9 @@ const Login = () => {
 
                         {/* {errors.exampleRequired && <span>This field is required</span>} */}
 
-                        <input type="submit" value="login" onClick={handleLoginSubmit} className='bg-success rounded text-white border-0 p-4' /> <br />
-
-                        <button onClick={handleGoogleSignIn}>google sign in</button>
+                        <input type="submit" value="login" onClick={handleLoginSubmit} className='bg-success rounded text-white border-0 p-2' /> <br />
+                        <Link to="/register"><Button variant='Link' className='text-danger'>are you new user?please register</Button></Link> <br />
+                        <button className='bg-success rounded text-white border-0 p-2' onClick={handleGoogleSignIn}>google sign in</button>
                         {isLoading &&
                             <Spinner animation="border" role="status">
                                 <span className="visually-hidden">Loading...</span>

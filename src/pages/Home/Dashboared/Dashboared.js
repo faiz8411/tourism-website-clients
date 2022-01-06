@@ -16,7 +16,7 @@ const Dashboard = () => {
         <div>
             <div className='row'>
                 <div className="col-md-2">
-                    <Navbar bg="light" expand={false}>
+                    <Navbar bg="light" >
                         <h3 className="text-danger">Click here</h3>
                         <Container fluid>
 
@@ -37,6 +37,7 @@ const Dashboard = () => {
                                         <Nav.Link as={HashLink} to={`/dashboard/payment`}>Pay</Nav.Link>
                                         <Nav.Link as={HashLink} to={`/dashboard/AllServiceManage`}>All service</Nav.Link>
                                         <Nav.Link as={HashLink} to={`/dashboard/MakeAdmin`}>Make admin</Nav.Link>
+                                        <Nav.Link as={HashLink} to={`/dashboard/makeSuper`}>Make super admin</Nav.Link>
 
                                         {user?.email ?
                                             <Nav.Link as={HashLink} onClick={logOut} to="/logout">Logout</Nav.Link>

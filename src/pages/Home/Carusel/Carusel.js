@@ -5,71 +5,41 @@ import './Carisel.css'
 
 const Carusel = () => {
     return (
-        <div className='carousel-container'>
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6 col-lg-6 mt-5">
-                        <h4>EXPLORE WORLD WITH OUR TEAM <br />
-                            <span className='text'> OUT OF YOUR ZONE</span> </h4>
-                        <button className='p-2 button shadow-4 m-2 bg-success rounded text-white'>explore</button>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                        <img className='img-fluid small' src="https://i.ibb.co/vsrF86k/doctor.png" alt="" />
-                        <div className='d-flex bg-white'>
-                            <div className='m-3'>
-                                <Dropdown className="me-auto">
-                                    <Dropdown.Toggle variant="white" id="dropdown-basic" className='mx-auto'>
-                                        location
-                                    </Dropdown.Toggle>
-
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">japan</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">cox,s bazar</Dropdown.Item>
-                                    </Dropdown.Menu>
-                                </Dropdown>
-                                <h5>italia</h5>
-                            </div>
-                            <div className='m-3'>
-                                <Dropdown className="me-auto">
-                                    <Dropdown.Toggle variant="white" id="dropdown-basic" className='mx-auto'>
-
-                                        date
-                                    </Dropdown.Toggle>
-
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1"> <input type="date" value="date" /></Dropdown.Item>
-
-                                    </Dropdown.Menu>
-                                </Dropdown>
-                                <h6>thu 12</h6>
-                            </div>
-                            <div className='m-3'>
-                                <Dropdown className="me-auto">
-                                    <Dropdown.Toggle variant="white" id="dropdown-basic" className='mx-auto'>
-                                        location
-                                    </Dropdown.Toggle>
-
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                                    </Dropdown.Menu>
-                                </Dropdown>
-                                <h6>55000-45000</h6>
-                            </div>
-                            <div className='mt-3'>
-                                <button className='bg-warning p-3 rounded text-white border-0'>search</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
+        <Carousel>
+            <Carousel.Item interval={1000}>
+                <img
+                    className="d-block w-100 h-80"
+                    src="https://i.ibb.co/XZWmp9L/5cd9522593a1526fee255ea4.jpg"
+                    alt="First slide"
+                />
+                <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={500}>
+                <img
+                    className="d-block w-100 h-80"
+                    src="https://i.ibb.co/ZcwDSyQ/3-days-fes-desert-trip-to-marrakech-1.jpg"
+                    alt="Second slide"
+                />
+                <Carousel.Caption>
+                    <h3>Sahara Desert</h3>
+                    <p>This is a list of the largest deserts in the world by area.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100 h-80"
+                    src="https://i.ibb.co/rQFmb0Q/leka3.jpg"
+                    alt="Third slide"
+                />
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
     );
 };
 

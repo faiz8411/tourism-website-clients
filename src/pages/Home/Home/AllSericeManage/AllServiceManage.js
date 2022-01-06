@@ -16,12 +16,12 @@ const AllServiceManage = () => {
 
     console.log(status);
     useEffect(() => {
-        fetch(`http://localhost:5000/allOrders`)
+        fetch(`https://quiet-springs-89109.herokuapp.com/allOrders`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, []);
     const handleUpdate = (id) => {
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(`https://quiet-springs-89109.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -32,7 +32,7 @@ const AllServiceManage = () => {
 
     const handleDelete = (id) => {
         alert('you want to delete')
-        fetch(`http://localhost:5000/deleteOrder/${id}`, {
+        fetch(`https://quiet-springs-89109.herokuapp.com/deleteOrder/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
