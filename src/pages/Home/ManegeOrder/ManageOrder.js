@@ -41,7 +41,7 @@ const ManageOrder = () => {
                                 </div>
 
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-md-2">
                                 <h6>service name</h6>
                                 <h6 className='description'>{pd.name}</h6>
 
@@ -50,7 +50,7 @@ const ManageOrder = () => {
 
 
                             </div>
-                            <div className="col-md-2">
+                            <div className="col-md-4">
                                 <h6>user email</h6>
                                 <p className=' description-project'>{user.email}</p>
                             </div>

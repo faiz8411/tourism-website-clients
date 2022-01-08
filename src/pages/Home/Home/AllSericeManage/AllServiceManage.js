@@ -68,20 +68,20 @@ const AllServiceManage = () => {
 
 
                             </div>
-                            <div className="col-md-2">
+                            <div className="col-md-3">
                                 <h6>user email</h6>
                                 <p className=' description-project'>{pd.email}</p>
                             </div>
                             <div className="col-md-2">
                                 <h6>price</h6>
-                                <p className='text-danger'>price:${pd.price}</p>
+                                <p className='text-danger'>${pd.price}</p>
                             </div>
                             <div className="col-md-2">
                                 <h6>action</h6>
-                                <button className='mt-0 bg-warning border-0 rounded' onClick={() => handleDelete(pd._id)}>delete</button>
-                                <button className='mt-1 bg-warning border-0 rounded' onClick={() => handleUpdate(pd._id)}>update</button>
+                                <button className='mt-0 bg-danger text-white border-0 rounded' onClick={() => handleDelete(pd._id)}>delete</button>
+                                <button className='mt-1 bg-success text-white border-0 rounded' onClick={() => handleUpdate(pd._id)}>update</button>
                             </div>
-                            <div className="col-md-2">
+                            <div className="col-md-1">
                                 <h6>status</h6>
                                 <input type="text" defaultValue={pd.status} onChange={handleStatus} width="60px" />
                             </div>

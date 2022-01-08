@@ -9,14 +9,15 @@ import {
 
 
 } from "react-router-dom";
+import './Dashboard.css'
 const Dashboard = () => {
 
     const { user, logOut } = useAuth();
     return (
-        <div>
+        <div className='dashboard'>
             <div className='row'>
                 <div className="col-md-2">
-                    <Navbar bg="light" >
+                    <Navbar bg="light" expand={false} >
                         <h3 className="text-danger">Click here</h3>
                         <Container fluid>
 
