@@ -137,7 +137,7 @@ const Details = () => {
                         </div>
                         <div className="col-md-4">
                             <h6 className='text-primary'>More Information</h6>
-                            <p className='location'>{details.details}</p>
+                            <p className='location '>{details.details}</p>
                         </div>
                     </div>
 

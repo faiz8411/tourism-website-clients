@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
+import './MyOrder.css'
 
 const MyOrder = () => {
     const { user } = useAuth()
@@ -25,7 +26,7 @@ const MyOrder = () => {
         console.log(id);
     };
     return (
-        <div className='order-container'>
+        <div className='order-container '>
             <div className="row container">
 
                 {
@@ -43,9 +44,9 @@ const MyOrder = () => {
                                 <div className="col-md-6">
                                     <h6 className='description'>{pd.name}</h6>
 
-                                    <p className=' description-project'>{pd.description}</p>
+                                    <p >{pd.description}</p>
                                     <h4 className='price'>price:${pd.price}</h4>
-                                    <p>{pd.details}</p>
+                                    <p className='description-project'>{pd.details}</p>
                                     <button className='mt-5 btn btn-danger' onClick={() => handleDelete(pd._id)}>delete order</button>
                                 </div>
 

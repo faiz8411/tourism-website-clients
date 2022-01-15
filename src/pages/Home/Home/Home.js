@@ -6,10 +6,11 @@ import Experience from '../Experience/Experience';
 import Features from '../Features/Features';
 import Navigation from '../Navigation/Navigation';
 import Service from '../Service/Service';
+// import './Home.css'
 
 const Home = () => {
     return (
-        <div>
+        <div className='home-container'>
             {/* <Navigation></Navigation> */}
             <Carusel></Carusel>
             <AboutUs></AboutUs>

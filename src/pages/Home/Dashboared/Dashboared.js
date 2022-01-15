@@ -29,7 +29,7 @@ const Dashboard = () => {
                             >
 
                                 <Offcanvas.Header closeButton>
-                                    <Offcanvas.Title id="offcanvasNavbarLabel">Dashboard</Offcanvas.Title>
+                                    <Offcanvas.Title id="offcanvasNavbarLabel">{user.displayName}</Offcanvas.Title>
                                 </Offcanvas.Header>
                                 <Offcanvas.Body>
                                     <Nav className="justify-content-end flex-grow-1 pe-3">
